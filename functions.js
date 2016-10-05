@@ -46,3 +46,11 @@ function sortingEmail(arrOfObjects){
   return arrOfObjects; 
 }
   
+//function 3 - map on function to apply Sqrt
+function squareIt(arr){ 
+  var squares = arr.map(function(num) {
+  return num * num;
+      
+    });
+  return squares;
+}
