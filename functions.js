@@ -54,3 +54,24 @@ function squareIt(arr){
     });
   return squares;
 }
+
+//function 4 - array with num property
+function numeric(name, num){
+    this.name = name;
+    this.num = num; 
+}
+
+var one = new numeric('one', 1);
+var two = new numeric('two',2);
+var three = new numeric('three',3);
+
+var arrOfNums = [one, two, three];
+
+function sqrNums(arrOfOfNums){ 
+    arrOfOfNums.map(function(n) {
+         n.num = n.num * n.num; 
+    }); 
+    return arrOfNums;
+  }
+  
+  
