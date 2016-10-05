@@ -74,4 +74,27 @@ function sqrNums(arrOfOfNums){
     return arrOfNums;
   }
   
-  
+//function 5 - another way to do operations
+
+function operationMaker(operation){
+    switch (operation) {
+        case 'add':
+            return function(a,b) {
+                return a+b;
+            }
+        case 'subtract':
+            return function(a,b) {
+                return a-b;
+            }
+        case 'mult':
+            return function(a,b) {
+                return a*b;
+            }
+        case 'div':
+            return function(a,b) {
+                return a/b;
+            }
+        default:
+            return 0;
+    }
+}
